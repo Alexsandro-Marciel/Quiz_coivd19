@@ -1,14 +1,16 @@
 from time import sleep
 
 print('=-='*20)
-print('{:^94}'.format('\033[2;31m>>> Bem vindos ao nosso Quiz sobre prevenção e combate a Covid-19 <<<\033[m'))
+print('{:^94}'.format(
+    '\033[2;31m>>> Bem vindos ao nosso Quiz sobre prevenção e combate a Covid-19 <<<\033[m'))
 print('=-='*20)
 
 acertos = 0
 erros = 0
 pontos = 0
 
-iniciar = str(input('Você gostaria participar de nosso Quiz? [S/N] ')).strip().upper()
+iniciar = str(
+    input('Você gostaria participar de nosso Quiz? [S/N] ')).strip().upper()
 while iniciar != 'S' and iniciar != 'N':
     print('Não entendi sua resposta.', end=' ')
     iniciar = str(input('Gostaria de jogar o Quiz? [S/N] ')).upper().strip()
@@ -251,9 +253,9 @@ e) A propagação da doença atingir uma grande região geográfica.''')
         print('Parabéns, {}% é um bom rendimento, mas se você quiser melhorar pode simplesmente reiniciar o jogo.'.format(acertos * 10))
 
     else:
-        print('Você pode melhorar melhorar seus conhecimentos sobre o assunto.\nQue tal \033[2;31mRENICIAR\033[m o jogo?')
+        print(
+            'Você pode melhorar melhorar seus conhecimentos sobre o assunto.\nQue tal \033[2;31mRENICIAR\033[m o jogo?')
 
 elif iniciar == 'N':
-    print('Que pena, mas se quiser reconsiderar e jogar é só \033[2;31mRENICIAR\033[m o jogo.')
-
-
+    print(
+        'Que pena, mas se quiser reconsiderar e jogar é só \033[2;31mRENICIAR\033[m o jogo.')
